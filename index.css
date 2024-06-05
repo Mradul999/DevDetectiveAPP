@@ -140,8 +140,106 @@
   text-decoration: underline;
 }
 
-.{
+.userDesc{
+  font-size: 14px;
+  color:gray;
+  font-weight:100;
+  letter-spacing: 0.8px;
+  margin-bottom: 13px;
+
+
+
+}
+
+.repo-following-followers{
+  display: flex;
+  /* gap: 40px; */
+  background-color:aliceblue;
+  padding: 30px;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-bottom: 13px;
+
+
+}
+
+.repo{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+
+}
+
+.repo p:first-of-type{
+
+  color: rgb(145, 144, 144);
+  font-size: 15px;
+
+
+
+}
+.repo p:nth-of-type(2){
+  font-size: 20px;
+  font-weight:bold;
+
+}
+
+
+
+.followers{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+
+}
+
+.followers p:first-of-type{
+
+  color: rgb(145, 144, 144);
+  font-size: 15px;
+
+
+
+}
+.followers p:nth-of-type(2){
+  font-size: 20px;
+  font-weight:bold;
+}
+
+
+
+
+.following{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+
+}
+
+.following p:first-of-type{
+
+  color: rgb(145, 144, 144);
+  font-size: 15px;
+
+
+
+}
+.following p:nth-of-type(2){
+  font-size: 20px;
+  font-weight:bold;
   
 }
 
+
+.address-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+
+
+}
 
