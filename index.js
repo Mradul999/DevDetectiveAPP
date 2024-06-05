@@ -75,9 +75,9 @@ button.addEventListener("click", function (event) {
 const modeIcon = document.querySelector(".modeChange");
 const mainheading = document.querySelector("[main-heading]");
 const repoFollowingFollowers = document.querySelector(".repo-following-followers");
-const repo = document.querySelector("[user-repo]");
-const userfollowers = document.querySelector("[user_followers]");
-const userfollowing = document.querySelector("[user-following]");
+const repo = document.querySelector("[repo]");
+const userfollowers = document.querySelector("[followers]");
+const userfollowing = document.querySelector("[following]");
 const form = document.querySelector(".form");
 const wrapper = document.querySelector(".wrapper");
 const userData = document.querySelector(".user-data");
@@ -93,10 +93,10 @@ function changeModeDark(currentMode) {
     repo.style.color = "white";
     userfollowing.style.color = "white";
     userfollowers.style.color = "white";
-    form.style.backgroundColor = "#1E2A47";        
+    form.style.backgroundColor = "#1E2A47";
     userData.style.backgroundColor = "#1E2A47";
     userInput.style.color = "white";
-    userInput.style.cssText = "color: white; ::placeholder { color: white; }";
+    userInput.style.setProperty('--placeholder-color', 'white');
     wrapper.style.backgroundColor = "#141D2F";
     currentMode.style.color = "white";
     modeIcon.style.color = "white";
@@ -108,16 +108,16 @@ function changeModeLight(currentMode) {
     modeIcon.classList.remove("fa-sun");
     modeIcon.classList.add("fa-moon");
     mainheading.style.color = "rgb(146, 139, 139)";
+    form.style.backgroundColor = "";
     name.style.color = "black";
     date.style.color = "gray";
-    repoFollowingFollowers.style.color = "black"; x
-    repo.style.color = "black"; 
-    userfollowing.style.color = "black"; 
-    userfollowers.style.color = "black"; 
-    form.style.backgroundColor = "";
+    repoFollowingFollowers.style.color = "black"; // Corrected
+    repo.style.color = "black"; // Corrected
+    userfollowing.style.color = "black"; // Corrected
+    userfollowers.style.color = "black"; // Corrected
+    userInput.style.color = "black"; // Corrected
+    userInput.style.setProperty('--placeholder-color', 'gray'); // Reset placeholder color
     userData.style.backgroundColor = "";
-    userInput.style.color = "";
-    userInput.style.cssText = ""; 
     wrapper.style.backgroundColor = "";
     currentMode.style.color = "";
     modeIcon.style.color = "gray";
@@ -134,4 +134,4 @@ userMode.addEventListener("click", function () {
     }
 });
 
-getUserInfo("Mradul999");
+getUserInfo("thepranaygupta");
