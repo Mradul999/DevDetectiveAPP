@@ -40,7 +40,7 @@
   gap: 10px;
   font-size: 15px;
   font-family: monospace;
-  font-weight:400;
+  font-weight: 400;
 }
 
 .form {
@@ -53,219 +53,184 @@
   width: 620px;
   margin: 30px auto;
   align-items: center;
-  
 }
 .form input {
   background-color: white;
   all: unset;
   width: 500px;
   padding: 10px 10px;
+  font-size: 18px;
 }
 ::placeholder {
   font-size: 18px;
 }
 
 .btn {
-  
   all: unset;
   cursor: pointer;
-  background-color:rgb(51, 139, 240);
+  background-color: rgb(51, 139, 240);
   border-radius: 8px;
   padding: 12px 20px;
   font-size: 15px;
   color: white;
 }
 
-.fa-solid{
-    color: rgb(51, 139, 240);
-    font-size: 14px;
-    margin-bottom: 2px;
-
+.fa-solid {
+  color: rgb(51, 139, 240);
+  font-size: 14px;
+  margin-bottom: 2px;
 }
 
-.user-data{
-    width: 620px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+.user-data {
+  width: 620px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
-
-[user-image]{
-    height: 100px;
-    width: 100px;
-    border-radius: 100px;
-
-
+[user-image] {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
 }
-.user-details{
+.user-details {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap:15px;
-  margin:8px;
-
-
+  gap: 15px;
+  margin: 8px;
 }
 
-.username-joined-date{
+.username-joined-date {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.username{
+.username {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.7px;
-
-
 }
-.joined-date{
+.joined-date {
   font-size: 13px;
   font-weight: 500;
   color: gray;
-
 }
-[userid]{
-  
+[userid] {
   font-size: 14px;
   cursor: pointer;
-  color:rgb(8, 140, 255);
+  color: rgb(8, 140, 255);
   text-decoration: underline;
 }
 
-.userDesc{
+.userDesc {
   font-size: 14px;
-  color:gray;
-  font-weight:100;
+  color: gray;
+  font-weight: 100;
   letter-spacing: 0.8px;
   margin-bottom: 13px;
-
-
-
 }
 
-.repo-following-followers{
+.repo-following-followers {
   display: flex;
   /* gap: 40px; */
-  background-color:aliceblue;
+  background-color: aliceblue;
   padding: 30px;
   border-radius: 10px;
   justify-content: space-between;
   margin-bottom: 13px;
-
-
 }
 
-.repo{
+.repo {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  
-
 }
 
-.repo p:first-of-type{
-
+.repo p:first-of-type {
   color: rgb(145, 144, 144);
   font-size: 15px;
-
-
-
 }
-.repo p:nth-of-type(2){
+.repo p:nth-of-type(2) {
   font-size: 20px;
-  font-weight:bold;
-
+  font-weight: bold;
 }
 
-
-
-.followers{
+.followers {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  
-
 }
 
-.followers p:first-of-type{
-
+.followers p:first-of-type {
   color: rgb(145, 144, 144);
   font-size: 15px;
-
-
-
 }
-.followers p:nth-of-type(2){
+.followers p:nth-of-type(2) {
   font-size: 20px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-
-
-
-.following{
+.following {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  
-
 }
 
-.following p:first-of-type{
-
+.following p:first-of-type {
   color: rgb(145, 144, 144);
   font-size: 15px;
-
-
-
 }
-.following p:nth-of-type(2){
+.following p:nth-of-type(2) {
   font-size: 20px;
-  font-weight:bold;
-  
+  font-weight: bold;
 }
 
-
-.address-link{
+.address-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 15px;
   color: rgb(114, 171, 206);
-
-
 }
 
-[link]{
+.address-link div:first-of-type{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.fa-solid,fa-brands{
   color: rgb(114, 171, 206);
-  
+
+
 
 }
 
-.twitter-company{
+
+
+[link] {
+  color: rgb(114, 171, 206);
+}
+
+.twitter-company {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 15px;
   color: rgb(114, 171, 206);
-
-
 }
 
-[twitter]{
+[twitter] {
   color: rgb(114, 171, 206);
 }
 
-[company]{
+[company] {
   color: rgb(114, 171, 206);
 }
-
-

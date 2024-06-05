@@ -40,16 +40,20 @@ async function getUserInfo(username) {
             date.innerText = "Joined "+userDate;
             userid.innerText = "@"+userData.login;
             userid.href = userData.html_url;
+            userid.target="_blank";
             bio.innerText = userBio || "No bio available";
             followers.innerText = userFollowers;
             following.innerText = userFollowing;
             repos.innerText = userRepos;
             address.innerText = userAddress || "Not available";
             personalWebsite.innerText = userWebsite || "Not available";
-            personalWebsite.href = userWebsite || "#";
+            personalWebsite.href = userData.blog || "#";
             company.innerText = userCompany || "Not available";
             company.href=`https://github.com/${userData.company}`;
+            company.target="_blank";
             twitter.innerText=userTwitter||"Not available";
+            twitter.href=`https://x.com/${userTwitter}`;
+            twitter.target="_blank";
         } else {
             console.error("User not found");
         }
