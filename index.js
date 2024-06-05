@@ -110,7 +110,7 @@ function changeModeLight(currentMode) {
     mainheading.style.color = "rgb(146, 139, 139)";
     name.style.color = "black";
     date.style.color = "gray";
-    repoFollowingFollowers.style.color = "black"; 
+    repoFollowingFollowers.style.color = "black"; x
     repo.style.color = "black"; 
     userfollowing.style.color = "black"; 
     userfollowers.style.color = "black"; 
