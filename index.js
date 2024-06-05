@@ -31,7 +31,7 @@ async function getUserInfo(username) {
             const userRepos = userData.public_repos;
             const userAddress = userData.location;
             const userWebsite = userData.blog;
-            const userCompany = userData.company;
+            const userCompany = userData.company ? userData.company.replace('@', '') : '';
             const userTwitter = userData.twitter_username;
 
             // Displaying on the UI
@@ -47,13 +47,14 @@ async function getUserInfo(username) {
             repos.innerText = userRepos;
             address.innerText = userAddress || "Not available";
             personalWebsite.innerText = userWebsite || "Not available";
-            personalWebsite.href = userData.blog || "#";
+            personalWebsite.href = userWebsite ? (userWebsite.startsWith('http') ? userWebsite : 'http://' + userWebsite) : "#";
+            personalWebsite.target = userWebsite ? "_blank" : "";
             company.innerText = userCompany || "Not available";
-            company.href = `https://github.com/${userData.company}`;
-            company.target = "_blank";
+            company.href = userCompany ? `https://github.com/${userCompany}` : "#";
+            company.target = userCompany ? "_blank" : "";
             twitter.innerText = userTwitter || "Not available";
-            twitter.href = `https://x.com/${userTwitter}`;
-            twitter.target = "_blank";
+            twitter.href = userTwitter ? `https://x.com/${userTwitter}` : "#";
+            twitter.target = userTwitter ? "_blank" : "";
         } else {
             console.error("User not found");
         }
@@ -109,14 +110,14 @@ function changeModeLight(currentMode) {
     mainheading.style.color = "rgb(146, 139, 139)";
     name.style.color = "black";
     date.style.color = "gray";
-    repoFollowingFollowers.style.color = "black"; 
-    repo.style.color = "black"; 
-    userfollowing.style.color = "black"; 
-    userfollowers.style.color = "black"; 
+    repoFollowingFollowers.style.color = "black"; // Corrected
+    repo.style.color = "black"; // Corrected
+    userfollowing.style.color = "black"; // Corrected
+    userfollowers.style.color = "black"; // Corrected
     form.style.backgroundColor = "";
     userData.style.backgroundColor = "";
     userInput.style.color = "";
-    userInput.style.cssText = ""; 
+    userInput.style.cssText = ""; // Reset placeholder color
     wrapper.style.backgroundColor = "";
     currentMode.style.color = "";
     modeIcon.style.color = "gray";
