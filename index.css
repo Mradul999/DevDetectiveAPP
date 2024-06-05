@@ -60,10 +60,13 @@
   width: 500px;
   padding: 10px 10px;
   font-size: 18px;
+  color: rgb(162, 162, 162);
+  /* color: green; */
 }
-::placeholder {
-  font-size: 18px;
+input::placeholder{
+  color:  rgb(162, 162, 162);
 }
+
 
 .btn {
   all: unset;
@@ -80,6 +83,8 @@
   font-size: 14px;
   margin-bottom: 2px;
 }
+
+
 
 .user-data {
   width: 620px;
@@ -225,6 +230,10 @@
   justify-content: space-between;
   font-size: 15px;
   color: rgb(114, 171, 206);
+  /* color: ; */
+
+  
+  
 }
 
 [twitter] {
@@ -234,3 +243,10 @@
 [company] {
   color: rgb(114, 171, 206);
 }
+
+
+
+
+
+/* darkmode-lightmode */
+
