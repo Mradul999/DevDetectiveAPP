@@ -111,12 +111,12 @@ function changeModeLight(currentMode) {
     form.style.backgroundColor = "";
     name.style.color = "black";
     date.style.color = "gray";
-    repoFollowingFollowers.style.color = "black"; // Corrected
-    repo.style.color = "black"; // Corrected
-    userfollowing.style.color = "black"; // Corrected
-    userfollowers.style.color = "black"; // Corrected
-    userInput.style.color = "black"; // Corrected
-    userInput.style.setProperty('--placeholder-color', 'gray'); // Reset placeholder color
+    repoFollowingFollowers.style.color = "black"; 
+    repo.style.color = "black"; 
+    userfollowing.style.color = "black"; 
+    userfollowers.style.color = "black"; 
+    userInput.style.color = "black"; 
+    userInput.style.setProperty('--placeholder-color', 'gray'); 
     userData.style.backgroundColor = "";
     wrapper.style.backgroundColor = "";
     currentMode.style.color = "";
