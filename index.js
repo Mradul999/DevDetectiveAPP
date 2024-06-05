@@ -93,7 +93,7 @@ function changeModeDark(currentMode) {
     repo.style.color = "white";
     userfollowing.style.color = "white";
     userfollowers.style.color = "white";
-    form.style.backgroundColor = "#1E2A47";
+    form.style.backgroundColor = "#1E2A47";        
     userData.style.backgroundColor = "#1E2A47";
     userInput.style.color = "white";
     userInput.style.cssText = "color: white; ::placeholder { color: white; }";
@@ -134,4 +134,4 @@ userMode.addEventListener("click", function () {
     }
 });
 
-getUserInfo("thepranaygupta");
+getUserInfo("Mradul999");
