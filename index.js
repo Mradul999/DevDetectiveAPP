@@ -8,8 +8,9 @@ const repos = document.querySelector("[user-repo]");
 const followers = document.querySelector("[user_followers]");
 const following = document.querySelector("[user-following]");
 const address = document.querySelector(".address");
-const personalWebsite = document.querySelector(".link");
-const company = document.querySelector(".company");
+const personalWebsite = document.querySelector("[link]");
+const twitter=document.querySelector("[twitter]");
+const company = document.querySelector("[company]");
 
 async function getUserInfo(username) {
     try {
@@ -31,6 +32,7 @@ async function getUserInfo(username) {
             const userAddress = userData.location;
             const userWebsite = userData.blog;
             const userCompany = userData.company;
+            const userTwitter=userData.twitter_username;
 
             // Displaying on the UI
             profilePic.src = userProfilePic;
@@ -43,9 +45,11 @@ async function getUserInfo(username) {
             following.innerText = userFollowing;
             repos.innerText = userRepos;
             address.innerText = userAddress || "Not available";
-            personalWebsite.innerText = userWebsite ? "Website" : "Not available";
+            personalWebsite.innerText = userWebsite || "Not available";
             personalWebsite.href = userWebsite || "#";
             company.innerText = userCompany || "Not available";
+            company.href=`https://github.com/${userData.company}`;
+            twitter.innerText=userTwitter||"Not available";
         } else {
             console.error("User not found");
         }

@@ -239,7 +239,33 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 15px;
+  color: rgb(114, 171, 206);
 
 
 }
+
+[link]{
+  color: rgb(114, 171, 206);
+  
+
+}
+
+.twitter-company{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  color: rgb(114, 171, 206);
+
+
+}
+
+[twitter]{
+  color: rgb(114, 171, 206);
+}
+
+[company]{
+  color: rgb(114, 171, 206);
+}
+
 
