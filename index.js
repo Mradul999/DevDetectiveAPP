@@ -96,7 +96,7 @@ function changeModeDark(currentMode) {
     form.style.backgroundColor = "#1E2A47";
     userData.style.backgroundColor = "#1E2A47";
     userInput.style.color = "white";
-    userInput.style.setProperty('--placeholder-color', 'white');
+   
     wrapper.style.backgroundColor = "#141D2F";
     currentMode.style.color = "white";
     modeIcon.style.color = "white";
@@ -116,7 +116,7 @@ function changeModeLight(currentMode) {
     userfollowing.style.color = "black"; 
     userfollowers.style.color = "black"; 
     userInput.style.color = "black"; 
-    userInput.style.setProperty('--placeholder-color', 'gray'); 
+    document.documentElement.style.setProperty('--placeholder-color', 'gray');
     userData.style.backgroundColor = "";
     wrapper.style.backgroundColor = "";
     currentMode.style.color = "";
@@ -134,4 +134,4 @@ userMode.addEventListener("click", function () {
     }
 });
 
-getUserInfo("thepranaygupta");
+getUserInfo("Mradul999");

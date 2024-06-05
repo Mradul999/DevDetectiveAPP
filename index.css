@@ -4,13 +4,13 @@
   box-sizing: border-box;
   font-family: monospace;
 }
+
 .wrapper {
   background-color: aliceblue;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   padding: 20px 20px;
 }
 
@@ -28,10 +28,12 @@
   align-items: center;
   justify-content: space-around;
 }
+
 .top-div h2 {
   font-size: 30px;
   color: rgb(146, 139, 139);
 }
+
 .mode {
   cursor: pointer;
   display: flex;
@@ -54,6 +56,7 @@
   margin: 30px auto;
   align-items: center;
 }
+
 .form input {
   background-color: white;
   all: unset;
@@ -61,12 +64,11 @@
   padding: 10px 10px;
   font-size: 18px;
   color: rgb(162, 162, 162);
-  /* color: green; */
-}
-input::placeholder{
-  color:  rgb(162, 162, 162);
 }
 
+input::placeholder {
+  color: rgb(162, 162, 162);
+}
 
 .btn {
   all: unset;
@@ -78,13 +80,15 @@ input::placeholder{
   color: white;
 }
 
+[search-btn]:hover {
+  background-color: rgb(101, 178, 255);
+}
+
 .fa-solid {
   color: rgb(51, 139, 240);
   font-size: 14px;
   margin-bottom: 2px;
 }
-
-
 
 .user-data {
   width: 620px;
@@ -103,6 +107,7 @@ input::placeholder{
   width: 100px;
   border-radius: 100px;
 }
+
 .user-details {
   width: 100%;
   display: flex;
@@ -123,11 +128,13 @@ input::placeholder{
   font-weight: 600;
   letter-spacing: 0.7px;
 }
+
 .joined-date {
   font-size: 13px;
   font-weight: 500;
   color: gray;
 }
+
 [userid] {
   font-size: 14px;
   cursor: pointer;
@@ -145,7 +152,6 @@ input::placeholder{
 
 .repo-following-followers {
   display: flex;
-  /* gap: 40px; */
   background-color: aliceblue;
   padding: 30px;
   border-radius: 10px;
@@ -163,6 +169,7 @@ input::placeholder{
   color: rgb(145, 144, 144);
   font-size: 15px;
 }
+
 .repo p:nth-of-type(2) {
   font-size: 20px;
   font-weight: bold;
@@ -178,6 +185,7 @@ input::placeholder{
   color: rgb(145, 144, 144);
   font-size: 15px;
 }
+
 .followers p:nth-of-type(2) {
   font-size: 20px;
   font-weight: bold;
@@ -193,6 +201,7 @@ input::placeholder{
   color: rgb(145, 144, 144);
   font-size: 15px;
 }
+
 .following p:nth-of-type(2) {
   font-size: 20px;
   font-weight: bold;
@@ -206,19 +215,16 @@ input::placeholder{
   color: rgb(114, 171, 206);
 }
 
-.address-link div:first-of-type{
+.address-link div:first-of-type {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.fa-solid,fa-brands{
+
+.fa-solid,
+fa-brands {
   color: rgb(114, 171, 206);
-
-
-
 }
-
-
 
 [link] {
   color: rgb(114, 171, 206);
@@ -230,10 +236,6 @@ input::placeholder{
   justify-content: space-between;
   font-size: 15px;
   color: rgb(114, 171, 206);
-  /* color: ; */
-
-  
-  
 }
 
 [twitter] {
@@ -244,9 +246,79 @@ input::placeholder{
   color: rgb(114, 171, 206);
 }
 
-
-
-
-
 /* darkmode-lightmode */
 
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 100%;
+    margin: 20px 0;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .user-data {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .repo-following-followers {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-div h2 {
+    font-size: 24px;
+  }
+
+  .mode {
+    font-size: 14px;
+  }
+
+  .username {
+    font-size: 18px;
+  }
+
+  .joined-date {
+    font-size: 12px;
+  }
+
+  .userDesc {
+    font-size: 12px;
+  }
+
+  .address-link,
+  .twitter-company {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .address-link div:first-of-type,
+  .twitter-company div:first-of-type {
+    margin-bottom: 10px;
+  }
+}
