@@ -11,6 +11,7 @@ const address = document.querySelector(".address");
 const personalWebsite = document.querySelector("[link]");
 const twitter = document.querySelector("[twitter]");
 const company = document.querySelector("[company]");
+const noUsernameError=document.querySelector(".noUsernameError");
 
 async function getUserInfo(username) {
     try {
@@ -18,6 +19,8 @@ async function getUserInfo(username) {
         const userData = await response.json();
 
         if (response.status === 200) {
+            noUsernameError.classList.remove("active");
+            
             const userProfilePic = userData.avatar_url;
             const userName = userData.name || userData.login;
             const userDate = new Date(userData.created_at).toLocaleDateString('en-US', {
@@ -55,8 +58,14 @@ async function getUserInfo(username) {
             twitter.innerText = userTwitter || "Not available";
             twitter.href = userTwitter ? `https://x.com/${userTwitter}` : "#";
             twitter.target = userTwitter ? "_blank" : "";
+
+            
+            
         } else {
             console.error("User not found");
+            
+            noUsernameError.classList.add("active");
+            
         }
     } catch (error) {
         console.error("Error fetching user data:", error);
@@ -137,5 +146,7 @@ userMode.addEventListener("click", function () {
         changeModeLight(currentMode);
     }
 });
+
+
 
 getUserInfo("Mradul999");

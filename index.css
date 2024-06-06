@@ -61,19 +61,22 @@
 .form input {
   background-color: white;
   all: unset;
-  width: 300px;
+  width: 500px;
   padding: 10px 10px;
   font-size: 18px;
   color: rgb(162, 162, 162);
 }
 
 .noUsernameError{
-  /* display: none; */
-  /* padding-right: 70px; */
-  display: block;
+  width: 250px;
+  display: none;
   color: red;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
 
+}
+.noUsernameError.active{
+  display: block;
 }
 
 input::placeholder {
