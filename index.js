@@ -150,3 +150,4 @@ userMode.addEventListener("click", function () {
 
 
 getUserInfo("Mradul999");
+noUsernameError.classList.remove("active");
