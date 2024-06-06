@@ -15,4 +15,5 @@ DevDetective is a web application that provides detailed information about a Git
 ## Demo
 
 [Live Demo]  =>   https://mradul-dev-detective.netlify.app
+[Live Demo]  =>   https://mradul999.github.io/DevDetectiveAPP
 
