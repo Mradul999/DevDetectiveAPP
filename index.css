@@ -47,9 +47,10 @@
 
 .form {
   margin-top: 30px;
+  justify-content: space-between;
   display: flex;
-  justify-content: center;
-  padding: 10px 15px;
+  padding: 10px 10px;
+  padding-left: 20px;
   background-color: white;
   border-radius: 10px;
   width: 620px;
@@ -60,10 +61,19 @@
 .form input {
   background-color: white;
   all: unset;
-  width: 500px;
+  width: 300px;
   padding: 10px 10px;
   font-size: 18px;
   color: rgb(162, 162, 162);
+}
+
+.noUsernameError{
+  /* display: none; */
+  /* padding-right: 70px; */
+  display: block;
+  color: red;
+  font-size: 14px;
+
 }
 
 input::placeholder {
@@ -72,7 +82,8 @@ input::placeholder {
 
 }
 input::placeholder {
-  color: var(--placeholder-color, rgb(162, 162, 162));
+  color: var(--placeholder-color, rgb(162, 162, 162)
+  );
 }
 
 
