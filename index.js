@@ -96,11 +96,13 @@ function changeModeDark(currentMode) {
     form.style.backgroundColor = "#1E2A47";
     userData.style.backgroundColor = "#1E2A47";
     userInput.style.color = "white";
-   
     wrapper.style.backgroundColor = "#141D2F";
     currentMode.style.color = "white";
     modeIcon.style.color = "white";
     repoFollowingFollowers.style.backgroundColor = "rgb(16, 32, 52)";
+
+
+    userInput.style.setProperty('--placeholder-color', 'white');
 }
 
 function changeModeLight(currentMode) {
@@ -122,6 +124,8 @@ function changeModeLight(currentMode) {
     currentMode.style.color = "";
     modeIcon.style.color = "gray";
     repoFollowingFollowers.style.backgroundColor = "";
+
+    userInput.style.setProperty('--placeholder-color', '');
 }
 
 const userMode = document.querySelector(".mode");

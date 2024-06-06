@@ -68,7 +68,13 @@
 
 input::placeholder {
   color: rgb(162, 162, 162);
+  /* color: red; */
+
 }
+input::placeholder {
+  color: var(--placeholder-color, rgb(162, 162, 162));
+}
+
 
 .btn {
   all: unset;
